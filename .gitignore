@@ -16,7 +16,8 @@ data/
 models/
 
 # Figures
-figures/
+figures/*
+!figures/.gitkeep
 
 # Misc
 .DS_Store
