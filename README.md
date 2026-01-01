@@ -22,15 +22,33 @@ End-to-end Python pipeline for forecasting Dangote Cement stock prices and analy
 - **RQ4:** How does trading volume correlate with daily price range and volatility?
 
 ## Installation
-1. Create & activate a virtual environment (recommended):
-   - Windows PowerShell:
-     - `python -m venv .venv`
-     - `.venv\Scripts\Activate.ps1`
-     - `pip install --upgrade pip`
-     - `pip install -r requirements.txt`
 
-2. (Optional) Pin installed versions:
-   - `.venv\Scripts\python -m pip freeze > requirements.lock`
+Recommended: create a virtual environment and install dependencies. Below are OS-specific quick commands.
+
+- Windows (PowerShell):
+  - `python -m venv .venv`
+  - `.venv\Scripts\Activate.ps1`
+  - `python -m pip install --upgrade pip`
+  - `python -m pip install -r requirements.txt`
+
+- Windows (Command Prompt / CMD):
+  - `python -m venv .venv`
+  - `.venv\Scripts\activate.bat`
+  - `python -m pip install --upgrade pip`
+  - `python -m pip install -r requirements.txt`
+
+- macOS / Linux (bash / zsh):
+  - `python3 -m venv .venv`
+  - `source .venv/bin/activate`
+  - `python -m pip install --upgrade pip`
+  - `python -m pip install -r requirements.txt`
+
+Notes:
+- On macOS/Linux you may use `python` instead of `python3` if your environment maps `python` to Python 3.x.
+- If your shell blocks scripts (PowerShell execution policy), run PowerShell as admin and set: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` or use CMD.
+- (Optional) Pin installed versions:
+  - Windows: `.venv\Scripts\python -m pip freeze > requirements.lock`
+  - macOS/Linux: `.venv/bin/python -m pip freeze > requirements.lock`
 
 Required packages include: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `joblib` (see `requirements.txt`).
 
