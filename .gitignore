@@ -1,0 +1,22 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Environments
+.env
+.venv/
+env/
+.vscode/
+
+# Data and models
+data/
+!data/
+!data/raw/
+!data/raw/Dangote Cement Stock Price History.csv
+models/
+
+# Figures
+figures/
+
+# Misc
+.DS_Store
