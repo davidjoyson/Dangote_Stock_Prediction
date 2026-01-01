@@ -12,8 +12,6 @@ from visualization import (
 )
 
 import pandas as pd
-import numpy as np
-from sklearn.metrics import mean_squared_error
 
 
 def main():
@@ -69,18 +67,14 @@ def main():
     rq4_a, rq4_b = plot_rq4(df_regression, out_path1='figures/RQ4_Fig1.pdf', out_path2='figures/RQ4_Fig2.pdf')
     figs.extend([rq4_a, rq4_b])
 
-    # Final message listing saved figures
     figs = [f.strip() for f in figs if f and isinstance(f, str)]
     if figs:
         print("Figures plotted:", ", ".join(figs))
     else:
         print("No figures were created.")
 
-    # Final pipeline completion message
     print(f"Pipeline complete. {len(figs)} figure(s) generated and saved to 'figures/'. Models saved to 'models/'. Processed data saved to 'data/processed/dangcem_cleanedx2.csv'.")
 
 
 if __name__ == "__main__":
     main()
-
-# Legacy monolithic script removed. All functionality is now in modular functions and orchestrated by main().
