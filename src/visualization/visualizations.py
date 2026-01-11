@@ -35,7 +35,7 @@ def plot_model_comparison(y_test, predictions: dict, out_path: str = 'figures/Mo
     plt.figure(figsize=(14, 7))
     plt.plot(y_test.index, y_test.values, label='Actual Price', color='black', linewidth=2)
     for name, preds in predictions.items():
-        if name in ["Linear Regression", "Random Forest", "SVR"]:
+        if name in ["Linear Regression", "Random Forest", "SVR","Ridge Regression","Gradient Boosting"]:
             plt.plot(y_test.index, preds, label=name, linestyle='--', alpha=0.8)
     plt.title('Model Comparison: Predicted vs Actual Next Day Price')
     plt.xlabel('Time Index')
