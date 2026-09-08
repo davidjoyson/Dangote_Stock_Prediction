@@ -23,7 +23,7 @@ End-to-end Python pipeline for forecasting Dangote Cement stock prices and analy
 
 ## Installation
 
-Recommended: create a virtual environment and install dependencies. Below are OS-specific quick commands.
+Recommended: create a virtual environment and install dependencies. Below are OS specific quick commands.
 
 - Windows (PowerShell):
   - `python -m venv .venv`
